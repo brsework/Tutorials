@@ -7,11 +7,11 @@ Sau một hồi tìm hiểu thì mới biết để trỏ config về 127.0.0.1:
 sudo a2enmod proxy 
 sudo a2enmod proxy_http 
 ```
-Sau khi bật xong thì chúng ta cần restart apache2
+Sau khi bật xong thì tôi restart apache2
 ``` sh
 systemctl restart apache2.services
 ```
-Sau đó chúng ta quay lại sửa  /etc/apache2/sites-available/000-default.conf 
+Sau đó tôi quay lại sửa  /etc/apache2/sites-available/000-default.conf 
 ``` sh
 sudo nano /etc/apache2/sites-available/000-default.conf 
 ```
@@ -29,4 +29,9 @@ Sau đó lại restart apache2 lại lần nữa
 ```sh
 systemctl restart apache2.services
 ```
-Quay lại thư mục node và chạy lệnh để start server của bạn lên. 
+Quay lại thư mục node và chạy lệnh để start server lên. 
+```sh
+node index.js
+```
+
+sau đó tôi quay lại máy cá nhân để bật trình duyệt lên gõ http://<ip của raspberrypi>/ thì thấy trang web mong muốn đã hiển thị ra.
