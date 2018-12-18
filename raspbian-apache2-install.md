@@ -1,4 +1,5 @@
 #### Raspbian va apache2
+##### Author: Nam (nam@brse.work) Created at: 2012/12/17
 Tôi đang thử triển khai một ứng dụng nodejs trên raspbian, sau khi cài đặt apache2 để có thể thiết lập virtualhost thì tôi bắt đầu suy nghĩ về việc thiết lập sao cho apache hiểu được tôi sẽ dùng cổng 3000 cho ứng dụng node.
 Tôi đã thử khởi động ứng dụng của mình bằng câu lệnh `node index.js` và truy cập từ bên ngoài bằng IP của máy đang chạy thì thấy nó tự động hiển thị trang mặc định của apache2.
 Sau một hồi tìm hiểu thì mới biết để trỏ config về 127.0.0.1:3000 thì trong 000-default.conf file phải thiết lập mod proxy.
